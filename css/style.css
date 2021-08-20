@@ -27,9 +27,9 @@ body {
 }
 
 .card__component {
-    width: 390px;
-    /* height: 550px; */
-    /* border: 3px solid yellowgreen; */
+    max-width: 390px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px #00000047;
 }
 
 .card__component-img {
@@ -44,23 +44,19 @@ body {
     background-color: white;
     height: auto;
     text-align: center;
-    /* padding: 25px 0; */
     border-radius: 0 0 20px 20px;
 }
 
 .card__component-body h3 {
-    font-size: 26px;
+    font-size: 27px;
     font-family: 'Red Hat Display';
     font-weight: 900;
-    /* padding: 15px 0; */
     padding-top: 36px;
-    /* color: var(--dark-blue); */
 }
 
 .card__component-body p {
     font-family: 'Red Hat Display';
     font-weight: 700;
-    /* color: #6d6d6d; */
     font-size: 16px;
     font-weight: 500;
     line-height: 1.3;
@@ -75,19 +71,19 @@ body {
 
 .subtitle, .cancel {
     color: #6d6d6d;
+    color: #6d6d6dba;
 }
 
 .card__component-plan {
     background-color: var(--very-pale-blue);
-    width: 325px;
-    height: 80px;
+    max-width: 310px;
+    height: 75px;
     border-radius: 10px;
     margin: 13px auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* box-shadow: 0px 0px 21px #0000003d; */
-    /* box-shadow: 0px 0px 15px #0000001f; */
+    box-shadow: 0px 0px 15px #0000001f;
 }
 
 .change {
@@ -108,19 +104,19 @@ body {
 }
 
 .btn-payment {
-    width: 325px;
+    width: 305px;
     height: 40px;
     border-radius: 10px;
     background: var(--bright-blue);
-    box-shadow: 0px 0px 4px hsl(245deg 75% 52%);
+    box-shadow: 0px 6px 22px hsl(231deg 83% 66% / 48%);
     border-style: none;
     color: white;
+    font-size: 15px;
 }
 
 .card__cancel {
-    /* margin: 15px 0; */
     padding-bottom: 30px;
-    padding-top: 10px;
+    padding-top: 13px;
 }
 
 .cancel {
@@ -130,5 +126,21 @@ body {
 }
 
 .div-btn {
-    margin-top: 23px;
+    margin-top: 28px;
+}
+
+@media (max-width: 375px) {
+    .card__component-plan {
+        margin: 13px 17px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card__component-plan {
+        margin: 13px 17px;
+    }
+
+    .btn-payment {
+        width: 256px;
+    }
 }
